@@ -30,6 +30,8 @@ simuStep <- function(n){
   abline(v = 0, h = 0, lty = 3)
   points(0,0, ,pch = 19,col = "red")
   points(sim_dat[n,2],sim_dat[n,3], pch = 17, col = "red")
+  dist <- sqrt(sim_dat[n,2]**2 + sim_dat[n,3]**2)
+  print(paste0("Distance from origin position : ", dist))
 }
 
 oneStep <- function(x,y){
